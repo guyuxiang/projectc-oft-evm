@@ -1,0 +1,29 @@
+version: 0.0
+os: linux
+files:
+  - source: forta
+    destination: /usr/local/bin/
+file_exists_behavior: OVERWRITE
+hooks:
+  BeforeInstall:
+    - location: scripts/stop-server.sh
+      timeout: 300
+      runas: forta
+  AfterInstall:
+    - location: scripts/install.sh
+      timeout: 500
+      runas: root
+    - location: scripts/set-permissions.sh
+      timeout: 300
+      runas: root
+    - location: scripts/inject-secrets.sh
+      timeout: 300
+      runas: root
+  ApplicationStart:
+    - location: scripts/start-server.sh
+      timeout: 300
+      runas: forta
+  AfterAllowTraffic:
+    - location: scripts/after-start.sh
+      timeout: 300
+      runas: forta

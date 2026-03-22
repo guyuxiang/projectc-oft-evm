@@ -1,0 +1,329 @@
+{
+  "storage": [
+    {
+      "astId": 530,
+      "contract": "contracts/dtt/Condition.sol:Condition",
+      "label": "_initialized",
+      "offset": 0,
+      "slot": "0",
+      "type": "t_uint8"
+    },
+    {
+      "astId": 533,
+      "contract": "contracts/dtt/Condition.sol:Condition",
+      "label": "_initializing",
+      "offset": 1,
+      "slot": "0",
+      "type": "t_bool"
+    },
+    {
+      "astId": 512,
+      "contract": "contracts/dtt/Condition.sol:Condition",
+      "label": "__gap",
+      "offset": 0,
+      "slot": "1",
+      "type": "t_array(t_uint256)50_storage"
+    },
+    {
+      "astId": 828,
+      "contract": "contracts/dtt/Condition.sol:Condition",
+      "label": "__gap",
+      "offset": 0,
+      "slot": "51",
+      "type": "t_array(t_uint256)50_storage"
+    },
+    {
+      "astId": 3267,
+      "contract": "contracts/dtt/Condition.sol:Condition",
+      "label": "__gap",
+      "offset": 0,
+      "slot": "101",
+      "type": "t_array(t_uint256)50_storage"
+    },
+    {
+      "astId": 11,
+      "contract": "contracts/dtt/Condition.sol:Condition",
+      "label": "_owner",
+      "offset": 0,
+      "slot": "151",
+      "type": "t_address"
+    },
+    {
+      "astId": 131,
+      "contract": "contracts/dtt/Condition.sol:Condition",
+      "label": "__gap",
+      "offset": 0,
+      "slot": "152",
+      "type": "t_array(t_uint256)49_storage"
+    },
+    {
+      "astId": 8351,
+      "contract": "contracts/dtt/Condition.sol:Condition",
+      "label": "conditionSetIndex",
+      "offset": 0,
+      "slot": "201",
+      "type": "t_mapping(t_string_memory_ptr,t_struct(ConditionSet)8368_storage)"
+    },
+    {
+      "astId": 8356,
+      "contract": "contracts/dtt/Condition.sol:Condition",
+      "label": "singleConditionIndex",
+      "offset": 0,
+      "slot": "202",
+      "type": "t_mapping(t_string_memory_ptr,t_struct(SingleCondition)8383_storage)"
+    },
+    {
+      "astId": 8406,
+      "contract": "contracts/dtt/Condition.sol:Condition",
+      "label": "config",
+      "offset": 0,
+      "slot": "203",
+      "type": "t_contract(Config)14452"
+    }
+  ],
+  "types": {
+    "t_address": {
+      "encoding": "inplace",
+      "label": "address",
+      "numberOfBytes": "20"
+    },
+    "t_array(t_string_storage)dyn_storage": {
+      "base": "t_string_storage",
+      "encoding": "dynamic_array",
+      "label": "string[]",
+      "numberOfBytes": "32"
+    },
+    "t_array(t_struct(ConditionFactor)8403_storage)dyn_storage": {
+      "base": "t_struct(ConditionFactor)8403_storage",
+      "encoding": "dynamic_array",
+      "label": "struct Condition.ConditionFactor[]",
+      "numberOfBytes": "32"
+    },
+    "t_array(t_uint256)49_storage": {
+      "base": "t_uint256",
+      "encoding": "inplace",
+      "label": "uint256[49]",
+      "numberOfBytes": "1568"
+    },
+    "t_array(t_uint256)50_storage": {
+      "base": "t_uint256",
+      "encoding": "inplace",
+      "label": "uint256[50]",
+      "numberOfBytes": "1600"
+    },
+    "t_bool": {
+      "encoding": "inplace",
+      "label": "bool",
+      "numberOfBytes": "1"
+    },
+    "t_contract(Config)14452": {
+      "encoding": "inplace",
+      "label": "contract Config",
+      "numberOfBytes": "20"
+    },
+    "t_enum(JoinType)8341": {
+      "encoding": "inplace",
+      "label": "enum Condition.JoinType",
+      "numberOfBytes": "1"
+    },
+    "t_mapping(t_string_memory_ptr,t_struct(ConditionSet)8368_storage)": {
+      "encoding": "mapping",
+      "key": "t_string_memory_ptr",
+      "label": "mapping(string => struct Condition.ConditionSet)",
+      "numberOfBytes": "32",
+      "value": "t_struct(ConditionSet)8368_storage"
+    },
+    "t_mapping(t_string_memory_ptr,t_struct(SingleCondition)8383_storage)": {
+      "encoding": "mapping",
+      "key": "t_string_memory_ptr",
+      "label": "mapping(string => struct Condition.SingleCondition)",
+      "numberOfBytes": "32",
+      "value": "t_struct(SingleCondition)8383_storage"
+    },
+    "t_string_memory_ptr": {
+      "encoding": "bytes",
+      "label": "string",
+      "numberOfBytes": "32"
+    },
+    "t_string_storage": {
+      "encoding": "bytes",
+      "label": "string",
+      "numberOfBytes": "32"
+    },
+    "t_struct(ConditionFactor)8403_storage": {
+      "encoding": "inplace",
+      "label": "struct Condition.ConditionFactor",
+      "members": [
+        {
+          "astId": 8385,
+          "contract": "contracts/dtt/Condition.sol:Condition",
+          "label": "name",
+          "offset": 0,
+          "slot": "0",
+          "type": "t_string_storage"
+        },
+        {
+          "astId": 8387,
+          "contract": "contracts/dtt/Condition.sol:Condition",
+          "label": "value",
+          "offset": 0,
+          "slot": "1",
+          "type": "t_string_storage"
+        },
+        {
+          "astId": 8389,
+          "contract": "contracts/dtt/Condition.sol:Condition",
+          "label": "changeFlag",
+          "offset": 0,
+          "slot": "2",
+          "type": "t_bool"
+        },
+        {
+          "astId": 8391,
+          "contract": "contracts/dtt/Condition.sol:Condition",
+          "label": "changeAble",
+          "offset": 1,
+          "slot": "2",
+          "type": "t_bool"
+        },
+        {
+          "astId": 8393,
+          "contract": "contracts/dtt/Condition.sol:Condition",
+          "label": "changeAddr",
+          "offset": 2,
+          "slot": "2",
+          "type": "t_address"
+        },
+        {
+          "astId": 8395,
+          "contract": "contracts/dtt/Condition.sol:Condition",
+          "label": "beginTime",
+          "offset": 0,
+          "slot": "3",
+          "type": "t_uint256"
+        },
+        {
+          "astId": 8397,
+          "contract": "contracts/dtt/Condition.sol:Condition",
+          "label": "endTime",
+          "offset": 0,
+          "slot": "4",
+          "type": "t_uint256"
+        },
+        {
+          "astId": 8399,
+          "contract": "contracts/dtt/Condition.sol:Condition",
+          "label": "commentsHash",
+          "offset": 0,
+          "slot": "5",
+          "type": "t_string_storage"
+        },
+        {
+          "astId": 8402,
+          "contract": "contracts/dtt/Condition.sol:Condition",
+          "label": "filesHash",
+          "offset": 0,
+          "slot": "6",
+          "type": "t_array(t_string_storage)dyn_storage"
+        }
+      ],
+      "numberOfBytes": "224"
+    },
+    "t_struct(ConditionSet)8368_storage": {
+      "encoding": "inplace",
+      "label": "struct Condition.ConditionSet",
+      "members": [
+        {
+          "astId": 8358,
+          "contract": "contracts/dtt/Condition.sol:Condition",
+          "label": "id",
+          "offset": 0,
+          "slot": "0",
+          "type": "t_string_storage"
+        },
+        {
+          "astId": 8361,
+          "contract": "contracts/dtt/Condition.sol:Condition",
+          "label": "scIDs",
+          "offset": 0,
+          "slot": "1",
+          "type": "t_array(t_string_storage)dyn_storage"
+        },
+        {
+          "astId": 8364,
+          "contract": "contracts/dtt/Condition.sol:Condition",
+          "label": "csIDs",
+          "offset": 0,
+          "slot": "2",
+          "type": "t_array(t_string_storage)dyn_storage"
+        },
+        {
+          "astId": 8367,
+          "contract": "contracts/dtt/Condition.sol:Condition",
+          "label": "join",
+          "offset": 0,
+          "slot": "3",
+          "type": "t_enum(JoinType)8341"
+        }
+      ],
+      "numberOfBytes": "128"
+    },
+    "t_struct(SingleCondition)8383_storage": {
+      "encoding": "inplace",
+      "label": "struct Condition.SingleCondition",
+      "members": [
+        {
+          "astId": 8370,
+          "contract": "contracts/dtt/Condition.sol:Condition",
+          "label": "id",
+          "offset": 0,
+          "slot": "0",
+          "type": "t_string_storage"
+        },
+        {
+          "astId": 8372,
+          "contract": "contracts/dtt/Condition.sol:Condition",
+          "label": "conditionType",
+          "offset": 0,
+          "slot": "1",
+          "type": "t_string_storage"
+        },
+        {
+          "astId": 8374,
+          "contract": "contracts/dtt/Condition.sol:Condition",
+          "label": "description",
+          "offset": 0,
+          "slot": "2",
+          "type": "t_string_storage"
+        },
+        {
+          "astId": 8378,
+          "contract": "contracts/dtt/Condition.sol:Condition",
+          "label": "fixFactors",
+          "offset": 0,
+          "slot": "3",
+          "type": "t_array(t_struct(ConditionFactor)8403_storage)dyn_storage"
+        },
+        {
+          "astId": 8382,
+          "contract": "contracts/dtt/Condition.sol:Condition",
+          "label": "dynamicFactors",
+          "offset": 0,
+          "slot": "4",
+          "type": "t_array(t_struct(ConditionFactor)8403_storage)dyn_storage"
+        }
+      ],
+      "numberOfBytes": "160"
+    },
+    "t_uint256": {
+      "encoding": "inplace",
+      "label": "uint256",
+      "numberOfBytes": "32"
+    },
+    "t_uint8": {
+      "encoding": "inplace",
+      "label": "uint8",
+      "numberOfBytes": "1"
+    }
+  }
+}

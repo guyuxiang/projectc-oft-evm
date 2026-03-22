@@ -1,0 +1,7 @@
+hooks:
+  - slug: ethereum
+    hook: https://qyapi.weixin.qq.com/cgi-bin/webhook/send?key=74cb55e7-0430-400a-b3e2-2e8d05d8cb06
+  - slug: polygon
+    hook: https://qyapi.weixin.qq.com/cgi-bin/webhook/send?key=d160bb33-ce44-47e4-870c-0d8b54a7b9bc
+  - slug: lineasepolia
+    hook: https://qyapi.weixin.qq.com/cgi-bin/webhook/send?key=74cb55e7-0430-400a-b3e2-2e8d05d8cb06

@@ -1,0 +1,157 @@
+{
+  "storage": [
+    {
+      "astId": 530,
+      "contract": "contracts/token/TransactionIDFactory.sol:TransactionIDFactory",
+      "label": "_initialized",
+      "offset": 0,
+      "slot": "0",
+      "type": "t_uint8"
+    },
+    {
+      "astId": 533,
+      "contract": "contracts/token/TransactionIDFactory.sol:TransactionIDFactory",
+      "label": "_initializing",
+      "offset": 1,
+      "slot": "0",
+      "type": "t_bool"
+    },
+    {
+      "astId": 512,
+      "contract": "contracts/token/TransactionIDFactory.sol:TransactionIDFactory",
+      "label": "__gap",
+      "offset": 0,
+      "slot": "1",
+      "type": "t_array(t_uint256)50_storage"
+    },
+    {
+      "astId": 828,
+      "contract": "contracts/token/TransactionIDFactory.sol:TransactionIDFactory",
+      "label": "__gap",
+      "offset": 0,
+      "slot": "51",
+      "type": "t_array(t_uint256)50_storage"
+    },
+    {
+      "astId": 3267,
+      "contract": "contracts/token/TransactionIDFactory.sol:TransactionIDFactory",
+      "label": "__gap",
+      "offset": 0,
+      "slot": "101",
+      "type": "t_array(t_uint256)50_storage"
+    },
+    {
+      "astId": 11,
+      "contract": "contracts/token/TransactionIDFactory.sol:TransactionIDFactory",
+      "label": "_owner",
+      "offset": 0,
+      "slot": "151",
+      "type": "t_address"
+    },
+    {
+      "astId": 131,
+      "contract": "contracts/token/TransactionIDFactory.sol:TransactionIDFactory",
+      "label": "__gap",
+      "offset": 0,
+      "slot": "152",
+      "type": "t_array(t_uint256)49_storage"
+    },
+    {
+      "astId": 18581,
+      "contract": "contracts/token/TransactionIDFactory.sol:TransactionIDFactory",
+      "label": "sequenceRecorders",
+      "offset": 0,
+      "slot": "201",
+      "type": "t_mapping(t_string_memory_ptr,t_mapping(t_string_memory_ptr,t_struct(sequenceRecorder)18574_storage))"
+    },
+    {
+      "astId": 18584,
+      "contract": "contracts/token/TransactionIDFactory.sol:TransactionIDFactory",
+      "label": "config",
+      "offset": 0,
+      "slot": "202",
+      "type": "t_contract(Config)14452"
+    }
+  ],
+  "types": {
+    "t_address": {
+      "encoding": "inplace",
+      "label": "address",
+      "numberOfBytes": "20"
+    },
+    "t_array(t_uint256)49_storage": {
+      "base": "t_uint256",
+      "encoding": "inplace",
+      "label": "uint256[49]",
+      "numberOfBytes": "1568"
+    },
+    "t_array(t_uint256)50_storage": {
+      "base": "t_uint256",
+      "encoding": "inplace",
+      "label": "uint256[50]",
+      "numberOfBytes": "1600"
+    },
+    "t_bool": {
+      "encoding": "inplace",
+      "label": "bool",
+      "numberOfBytes": "1"
+    },
+    "t_contract(Config)14452": {
+      "encoding": "inplace",
+      "label": "contract Config",
+      "numberOfBytes": "20"
+    },
+    "t_mapping(t_string_memory_ptr,t_mapping(t_string_memory_ptr,t_struct(sequenceRecorder)18574_storage))": {
+      "encoding": "mapping",
+      "key": "t_string_memory_ptr",
+      "label": "mapping(string => mapping(string => struct TransactionIDFactory.sequenceRecorder))",
+      "numberOfBytes": "32",
+      "value": "t_mapping(t_string_memory_ptr,t_struct(sequenceRecorder)18574_storage)"
+    },
+    "t_mapping(t_string_memory_ptr,t_struct(sequenceRecorder)18574_storage)": {
+      "encoding": "mapping",
+      "key": "t_string_memory_ptr",
+      "label": "mapping(string => struct TransactionIDFactory.sequenceRecorder)",
+      "numberOfBytes": "32",
+      "value": "t_struct(sequenceRecorder)18574_storage"
+    },
+    "t_string_memory_ptr": {
+      "encoding": "bytes",
+      "label": "string",
+      "numberOfBytes": "32"
+    },
+    "t_struct(sequenceRecorder)18574_storage": {
+      "encoding": "inplace",
+      "label": "struct TransactionIDFactory.sequenceRecorder",
+      "members": [
+        {
+          "astId": 18571,
+          "contract": "contracts/token/TransactionIDFactory.sol:TransactionIDFactory",
+          "label": "currentDay",
+          "offset": 0,
+          "slot": "0",
+          "type": "t_uint256"
+        },
+        {
+          "astId": 18573,
+          "contract": "contracts/token/TransactionIDFactory.sol:TransactionIDFactory",
+          "label": "sequence",
+          "offset": 0,
+          "slot": "1",
+          "type": "t_uint256"
+        }
+      ],
+      "numberOfBytes": "64"
+    },
+    "t_uint256": {
+      "encoding": "inplace",
+      "label": "uint256",
+      "numberOfBytes": "32"
+    },
+    "t_uint8": {
+      "encoding": "inplace",
+      "label": "uint8",
+      "numberOfBytes": "1"
+    }
+  }
+}

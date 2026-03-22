@@ -1,0 +1,484 @@
+{
+  "storage": [
+    {
+      "astId": 6123,
+      "contract": "contracts/dtt/SettleFacet.sol:SettleFacet",
+      "label": "ds",
+      "offset": 0,
+      "slot": "0",
+      "type": "t_struct(DTTStorages)6164_storage"
+    }
+  ],
+  "types": {
+    "t_address": {
+      "encoding": "inplace",
+      "label": "address",
+      "numberOfBytes": "20"
+    },
+    "t_array(t_string_storage)dyn_storage": {
+      "base": "t_string_storage",
+      "encoding": "dynamic_array",
+      "label": "string[]",
+      "numberOfBytes": "32"
+    },
+    "t_array(t_struct(ConditionFactor)6243_storage)dyn_storage": {
+      "base": "t_struct(ConditionFactor)6243_storage",
+      "encoding": "dynamic_array",
+      "label": "struct DTTStorage.ConditionFactor[]",
+      "numberOfBytes": "32"
+    },
+    "t_array(t_struct(ConditionSet)6208_storage)dyn_storage": {
+      "base": "t_struct(ConditionSet)6208_storage",
+      "encoding": "dynamic_array",
+      "label": "struct DTTStorage.ConditionSet[]",
+      "numberOfBytes": "32"
+    },
+    "t_array(t_struct(SingleCondition)6223_storage)dyn_storage": {
+      "base": "t_struct(SingleCondition)6223_storage",
+      "encoding": "dynamic_array",
+      "label": "struct DTTStorage.SingleCondition[]",
+      "numberOfBytes": "32"
+    },
+    "t_bool": {
+      "encoding": "inplace",
+      "label": "bool",
+      "numberOfBytes": "1"
+    },
+    "t_contract(Config)9762": {
+      "encoding": "inplace",
+      "label": "contract Config",
+      "numberOfBytes": "20"
+    },
+    "t_enum(JoinType)6256": {
+      "encoding": "inplace",
+      "label": "enum DTTStorage.JoinType",
+      "numberOfBytes": "1"
+    },
+    "t_enum(SettleStatus)6253": {
+      "encoding": "inplace",
+      "label": "enum DTTStorage.SettleStatus",
+      "numberOfBytes": "1"
+    },
+    "t_mapping(t_string_memory_ptr,t_struct(ConditionSet)6208_storage)": {
+      "encoding": "mapping",
+      "key": "t_string_memory_ptr",
+      "label": "mapping(string => struct DTTStorage.ConditionSet)",
+      "numberOfBytes": "32",
+      "value": "t_struct(ConditionSet)6208_storage"
+    },
+    "t_mapping(t_string_memory_ptr,t_struct(RealisedTokenTrade)6193_storage)": {
+      "encoding": "mapping",
+      "key": "t_string_memory_ptr",
+      "label": "mapping(string => struct DTTStorage.RealisedTokenTrade)",
+      "numberOfBytes": "32",
+      "value": "t_struct(RealisedTokenTrade)6193_storage"
+    },
+    "t_mapping(t_string_memory_ptr,t_struct(RealisedTokenTradeExpand)6196_storage)": {
+      "encoding": "mapping",
+      "key": "t_string_memory_ptr",
+      "label": "mapping(string => struct DTTStorage.RealisedTokenTradeExpand)",
+      "numberOfBytes": "32",
+      "value": "t_struct(RealisedTokenTradeExpand)6196_storage"
+    },
+    "t_mapping(t_string_memory_ptr,t_struct(SingleCondition)6223_storage)": {
+      "encoding": "mapping",
+      "key": "t_string_memory_ptr",
+      "label": "mapping(string => struct DTTStorage.SingleCondition)",
+      "numberOfBytes": "32",
+      "value": "t_struct(SingleCondition)6223_storage"
+    },
+    "t_string_memory_ptr": {
+      "encoding": "bytes",
+      "label": "string",
+      "numberOfBytes": "32"
+    },
+    "t_string_storage": {
+      "encoding": "bytes",
+      "label": "string",
+      "numberOfBytes": "32"
+    },
+    "t_struct(ConditionFactor)6243_storage": {
+      "encoding": "inplace",
+      "label": "struct DTTStorage.ConditionFactor",
+      "members": [
+        {
+          "astId": 6225,
+          "contract": "contracts/dtt/SettleFacet.sol:SettleFacet",
+          "label": "name",
+          "offset": 0,
+          "slot": "0",
+          "type": "t_string_storage"
+        },
+        {
+          "astId": 6227,
+          "contract": "contracts/dtt/SettleFacet.sol:SettleFacet",
+          "label": "value",
+          "offset": 0,
+          "slot": "1",
+          "type": "t_string_storage"
+        },
+        {
+          "astId": 6229,
+          "contract": "contracts/dtt/SettleFacet.sol:SettleFacet",
+          "label": "changeFlag",
+          "offset": 0,
+          "slot": "2",
+          "type": "t_bool"
+        },
+        {
+          "astId": 6231,
+          "contract": "contracts/dtt/SettleFacet.sol:SettleFacet",
+          "label": "changeAble",
+          "offset": 1,
+          "slot": "2",
+          "type": "t_bool"
+        },
+        {
+          "astId": 6233,
+          "contract": "contracts/dtt/SettleFacet.sol:SettleFacet",
+          "label": "changeAddr",
+          "offset": 2,
+          "slot": "2",
+          "type": "t_address"
+        },
+        {
+          "astId": 6235,
+          "contract": "contracts/dtt/SettleFacet.sol:SettleFacet",
+          "label": "beginTime",
+          "offset": 0,
+          "slot": "3",
+          "type": "t_uint256"
+        },
+        {
+          "astId": 6237,
+          "contract": "contracts/dtt/SettleFacet.sol:SettleFacet",
+          "label": "endTime",
+          "offset": 0,
+          "slot": "4",
+          "type": "t_uint256"
+        },
+        {
+          "astId": 6239,
+          "contract": "contracts/dtt/SettleFacet.sol:SettleFacet",
+          "label": "commentsHash",
+          "offset": 0,
+          "slot": "5",
+          "type": "t_string_storage"
+        },
+        {
+          "astId": 6242,
+          "contract": "contracts/dtt/SettleFacet.sol:SettleFacet",
+          "label": "filesHash",
+          "offset": 0,
+          "slot": "6",
+          "type": "t_array(t_string_storage)dyn_storage"
+        }
+      ],
+      "numberOfBytes": "224"
+    },
+    "t_struct(ConditionSet)6208_storage": {
+      "encoding": "inplace",
+      "label": "struct DTTStorage.ConditionSet",
+      "members": [
+        {
+          "astId": 6198,
+          "contract": "contracts/dtt/SettleFacet.sol:SettleFacet",
+          "label": "id",
+          "offset": 0,
+          "slot": "0",
+          "type": "t_string_storage"
+        },
+        {
+          "astId": 6201,
+          "contract": "contracts/dtt/SettleFacet.sol:SettleFacet",
+          "label": "scIDs",
+          "offset": 0,
+          "slot": "1",
+          "type": "t_array(t_string_storage)dyn_storage"
+        },
+        {
+          "astId": 6204,
+          "contract": "contracts/dtt/SettleFacet.sol:SettleFacet",
+          "label": "csIDs",
+          "offset": 0,
+          "slot": "2",
+          "type": "t_array(t_string_storage)dyn_storage"
+        },
+        {
+          "astId": 6207,
+          "contract": "contracts/dtt/SettleFacet.sol:SettleFacet",
+          "label": "join",
+          "offset": 0,
+          "slot": "3",
+          "type": "t_enum(JoinType)6256"
+        }
+      ],
+      "numberOfBytes": "128"
+    },
+    "t_struct(DTTStorages)6164_storage": {
+      "encoding": "inplace",
+      "label": "struct DTTStorage.DTTStorages",
+      "members": [
+        {
+          "astId": 6126,
+          "contract": "contracts/dtt/SettleFacet.sol:SettleFacet",
+          "label": "config",
+          "offset": 0,
+          "slot": "0",
+          "type": "t_contract(Config)9762"
+        },
+        {
+          "astId": 6128,
+          "contract": "contracts/dtt/SettleFacet.sol:SettleFacet",
+          "label": "paused",
+          "offset": 20,
+          "slot": "0",
+          "type": "t_bool"
+        },
+        {
+          "astId": 6133,
+          "contract": "contracts/dtt/SettleFacet.sol:SettleFacet",
+          "label": "businessIndex",
+          "offset": 0,
+          "slot": "1",
+          "type": "t_mapping(t_string_memory_ptr,t_struct(RealisedTokenTrade)6193_storage)"
+        },
+        {
+          "astId": 6138,
+          "contract": "contracts/dtt/SettleFacet.sol:SettleFacet",
+          "label": "businessIndexExpand",
+          "offset": 0,
+          "slot": "2",
+          "type": "t_mapping(t_string_memory_ptr,t_struct(RealisedTokenTradeExpand)6196_storage)"
+        },
+        {
+          "astId": 6143,
+          "contract": "contracts/dtt/SettleFacet.sol:SettleFacet",
+          "label": "conditionSetIndex",
+          "offset": 0,
+          "slot": "3",
+          "type": "t_mapping(t_string_memory_ptr,t_struct(ConditionSet)6208_storage)"
+        },
+        {
+          "astId": 6148,
+          "contract": "contracts/dtt/SettleFacet.sol:SettleFacet",
+          "label": "singleConditionIndex",
+          "offset": 0,
+          "slot": "4",
+          "type": "t_mapping(t_string_memory_ptr,t_struct(SingleCondition)6223_storage)"
+        },
+        {
+          "astId": 6152,
+          "contract": "contracts/dtt/SettleFacet.sol:SettleFacet",
+          "label": "scArray",
+          "offset": 0,
+          "slot": "5",
+          "type": "t_array(t_struct(SingleCondition)6223_storage)dyn_storage"
+        },
+        {
+          "astId": 6156,
+          "contract": "contracts/dtt/SettleFacet.sol:SettleFacet",
+          "label": "csArray",
+          "offset": 0,
+          "slot": "6",
+          "type": "t_array(t_struct(ConditionSet)6208_storage)dyn_storage"
+        },
+        {
+          "astId": 6161,
+          "contract": "contracts/dtt/SettleFacet.sol:SettleFacet",
+          "label": "scMap",
+          "offset": 0,
+          "slot": "7",
+          "type": "t_mapping(t_string_memory_ptr,t_struct(SingleCondition)6223_storage)"
+        },
+        {
+          "astId": 6163,
+          "contract": "contracts/dtt/SettleFacet.sol:SettleFacet",
+          "label": "verifyCount",
+          "offset": 0,
+          "slot": "8",
+          "type": "t_uint256"
+        }
+      ],
+      "numberOfBytes": "288"
+    },
+    "t_struct(RealisedTokenTrade)6193_storage": {
+      "encoding": "inplace",
+      "label": "struct DTTStorage.RealisedTokenTrade",
+      "members": [
+        {
+          "astId": 6166,
+          "contract": "contracts/dtt/SettleFacet.sol:SettleFacet",
+          "label": "from",
+          "offset": 0,
+          "slot": "0",
+          "type": "t_address"
+        },
+        {
+          "astId": 6168,
+          "contract": "contracts/dtt/SettleFacet.sol:SettleFacet",
+          "label": "to",
+          "offset": 0,
+          "slot": "1",
+          "type": "t_address"
+        },
+        {
+          "astId": 6170,
+          "contract": "contracts/dtt/SettleFacet.sol:SettleFacet",
+          "label": "tokenAddr",
+          "offset": 0,
+          "slot": "2",
+          "type": "t_address"
+        },
+        {
+          "astId": 6172,
+          "contract": "contracts/dtt/SettleFacet.sol:SettleFacet",
+          "label": "amount",
+          "offset": 0,
+          "slot": "3",
+          "type": "t_uint256"
+        },
+        {
+          "astId": 6174,
+          "contract": "contracts/dtt/SettleFacet.sol:SettleFacet",
+          "label": "tradeTime",
+          "offset": 0,
+          "slot": "4",
+          "type": "t_uint256"
+        },
+        {
+          "astId": 6176,
+          "contract": "contracts/dtt/SettleFacet.sol:SettleFacet",
+          "label": "timeScId",
+          "offset": 0,
+          "slot": "5",
+          "type": "t_string_storage"
+        },
+        {
+          "astId": 6178,
+          "contract": "contracts/dtt/SettleFacet.sol:SettleFacet",
+          "label": "conditionSetId",
+          "offset": 0,
+          "slot": "6",
+          "type": "t_string_storage"
+        },
+        {
+          "astId": 6180,
+          "contract": "contracts/dtt/SettleFacet.sol:SettleFacet",
+          "label": "partialAcceptEnable",
+          "offset": 0,
+          "slot": "7",
+          "type": "t_bool"
+        },
+        {
+          "astId": 6182,
+          "contract": "contracts/dtt/SettleFacet.sol:SettleFacet",
+          "label": "partialAcceptAddress",
+          "offset": 1,
+          "slot": "7",
+          "type": "t_address"
+        },
+        {
+          "astId": 6184,
+          "contract": "contracts/dtt/SettleFacet.sol:SettleFacet",
+          "label": "partialAcceptScId",
+          "offset": 0,
+          "slot": "8",
+          "type": "t_string_storage"
+        },
+        {
+          "astId": 6186,
+          "contract": "contracts/dtt/SettleFacet.sol:SettleFacet",
+          "label": "parentBusinessId",
+          "offset": 0,
+          "slot": "9",
+          "type": "t_string_storage"
+        },
+        {
+          "astId": 6189,
+          "contract": "contracts/dtt/SettleFacet.sol:SettleFacet",
+          "label": "subBusinessIds",
+          "offset": 0,
+          "slot": "10",
+          "type": "t_array(t_string_storage)dyn_storage"
+        },
+        {
+          "astId": 6192,
+          "contract": "contracts/dtt/SettleFacet.sol:SettleFacet",
+          "label": "status",
+          "offset": 0,
+          "slot": "11",
+          "type": "t_enum(SettleStatus)6253"
+        }
+      ],
+      "numberOfBytes": "384"
+    },
+    "t_struct(RealisedTokenTradeExpand)6196_storage": {
+      "encoding": "inplace",
+      "label": "struct DTTStorage.RealisedTokenTradeExpand",
+      "members": [
+        {
+          "astId": 6195,
+          "contract": "contracts/dtt/SettleFacet.sol:SettleFacet",
+          "label": "guaranteeAmount",
+          "offset": 0,
+          "slot": "0",
+          "type": "t_uint256"
+        }
+      ],
+      "numberOfBytes": "32"
+    },
+    "t_struct(SingleCondition)6223_storage": {
+      "encoding": "inplace",
+      "label": "struct DTTStorage.SingleCondition",
+      "members": [
+        {
+          "astId": 6210,
+          "contract": "contracts/dtt/SettleFacet.sol:SettleFacet",
+          "label": "id",
+          "offset": 0,
+          "slot": "0",
+          "type": "t_string_storage"
+        },
+        {
+          "astId": 6212,
+          "contract": "contracts/dtt/SettleFacet.sol:SettleFacet",
+          "label": "conditionType",
+          "offset": 0,
+          "slot": "1",
+          "type": "t_string_storage"
+        },
+        {
+          "astId": 6214,
+          "contract": "contracts/dtt/SettleFacet.sol:SettleFacet",
+          "label": "description",
+          "offset": 0,
+          "slot": "2",
+          "type": "t_string_storage"
+        },
+        {
+          "astId": 6218,
+          "contract": "contracts/dtt/SettleFacet.sol:SettleFacet",
+          "label": "fixFactors",
+          "offset": 0,
+          "slot": "3",
+          "type": "t_array(t_struct(ConditionFactor)6243_storage)dyn_storage"
+        },
+        {
+          "astId": 6222,
+          "contract": "contracts/dtt/SettleFacet.sol:SettleFacet",
+          "label": "dynamicFactors",
+          "offset": 0,
+          "slot": "4",
+          "type": "t_array(t_struct(ConditionFactor)6243_storage)dyn_storage"
+        }
+      ],
+      "numberOfBytes": "160"
+    },
+    "t_uint256": {
+      "encoding": "inplace",
+      "label": "uint256",
+      "numberOfBytes": "32"
+    }
+  }
+}

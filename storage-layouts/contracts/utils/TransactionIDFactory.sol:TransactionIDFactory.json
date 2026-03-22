@@ -1,0 +1,74 @@
+{
+  "storage": [
+    {
+      "astId": 14757,
+      "contract": "contracts/utils/TransactionIDFactory.sol:TransactionIDFactory",
+      "label": "sequenceRecorders",
+      "offset": 0,
+      "slot": "0",
+      "type": "t_mapping(t_string_memory_ptr,t_mapping(t_string_memory_ptr,t_struct(sequenceRecorder)14750_storage))"
+    },
+    {
+      "astId": 14760,
+      "contract": "contracts/utils/TransactionIDFactory.sol:TransactionIDFactory",
+      "label": "config",
+      "offset": 0,
+      "slot": "1",
+      "type": "t_contract(Config)9762"
+    }
+  ],
+  "types": {
+    "t_contract(Config)9762": {
+      "encoding": "inplace",
+      "label": "contract Config",
+      "numberOfBytes": "20"
+    },
+    "t_mapping(t_string_memory_ptr,t_mapping(t_string_memory_ptr,t_struct(sequenceRecorder)14750_storage))": {
+      "encoding": "mapping",
+      "key": "t_string_memory_ptr",
+      "label": "mapping(string => mapping(string => struct TransactionIDFactory.sequenceRecorder))",
+      "numberOfBytes": "32",
+      "value": "t_mapping(t_string_memory_ptr,t_struct(sequenceRecorder)14750_storage)"
+    },
+    "t_mapping(t_string_memory_ptr,t_struct(sequenceRecorder)14750_storage)": {
+      "encoding": "mapping",
+      "key": "t_string_memory_ptr",
+      "label": "mapping(string => struct TransactionIDFactory.sequenceRecorder)",
+      "numberOfBytes": "32",
+      "value": "t_struct(sequenceRecorder)14750_storage"
+    },
+    "t_string_memory_ptr": {
+      "encoding": "bytes",
+      "label": "string",
+      "numberOfBytes": "32"
+    },
+    "t_struct(sequenceRecorder)14750_storage": {
+      "encoding": "inplace",
+      "label": "struct TransactionIDFactory.sequenceRecorder",
+      "members": [
+        {
+          "astId": 14747,
+          "contract": "contracts/utils/TransactionIDFactory.sol:TransactionIDFactory",
+          "label": "currentDay",
+          "offset": 0,
+          "slot": "0",
+          "type": "t_uint256"
+        },
+        {
+          "astId": 14749,
+          "contract": "contracts/utils/TransactionIDFactory.sol:TransactionIDFactory",
+          "label": "sequence",
+          "offset": 0,
+          "slot": "1",
+          "type": "t_uint256"
+        }
+      ],
+      "numberOfBytes": "64"
+    },
+    "t_uint256": {
+      "encoding": "inplace",
+      "label": "uint256",
+      "numberOfBytes": "32"
+    }
+  }
+}

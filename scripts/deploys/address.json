@@ -1,0 +1,56 @@
+{
+	"Config": {
+		"contractCode": "Dtt_Config",
+		"contractName": "",
+		"sourceContractName": "Config",
+		"address": "0x88aEE81a295757E39Ee4cdd386234c7D8a503354",
+		"contractDeployTxBlockNumber": 81545731,
+		"contractType": "normal",
+		"facetContracts": null
+	},
+	"Encash": {
+		"contractCode": "Dtt_Encash",
+		"contractName": "",
+		"sourceContractName": "Encash",
+		"address": "0x798dcb02eDa5915908BB86ECf959e2Db2204ffb0",
+		"contractDeployTxBlockNumber": 81545697,
+		"contractType": "uups",
+		"facetContracts": null
+	},
+	"GLSGD": {
+		"contractCode": "Dtt_GLSGD_ERC20Permit",
+		"contractName": "",
+		"sourceContractName": "DTTERC20",
+		"address": "0xeD7e053A8aC42dC84cfb65702dF81d148c4B091E",
+		"contractDeployTxBlockNumber": 81545619,
+		"contractType": "uups",
+		"facetContracts": null
+	},
+	"GLUSD": {
+		"contractCode": "Dtt_GLUSD_ERC20Permit",
+		"contractName": "",
+		"sourceContractName": "DTTERC20",
+		"address": "0x02d0A2eB2C2114286B8AD5eE4f3ABDbB0EF80D54",
+		"contractDeployTxBlockNumber": 81545630,
+		"contractType": "uups",
+		"facetContracts": null
+	},
+	"TransactionIDFactory": {
+		"contractCode": "Dtt_TransactionIDFactory",
+		"contractName": "",
+		"sourceContractName": "TransactionIDFactory",
+		"address": "0xE8bCB7661Dd67840bcEfd1F62a6eD1d48AF602f8",
+		"contractDeployTxBlockNumber": 81545639,
+		"contractType": "uups",
+		"facetContracts": null
+	},
+	"UserPermission": {
+		"contractCode": "Dtt_UserPermission",
+		"contractName": "",
+		"sourceContractName": "UserPermission",
+		"address": "0x03F1793734a585B5d5C35ccC9288B18CC2C23182",
+		"contractDeployTxBlockNumber": 81545728,
+		"contractType": "normal",
+		"facetContracts": null
+	}
+}

@@ -1,0 +1,59 @@
+[
+  {
+    "factoryName": "DTTERC20",
+    "contractName": "GLSGD",
+    "deployParam": [
+      "Pulse SGD Token",
+      "PLTSGD"
+    ],
+    "type": "uups"
+  },
+  {
+    "factoryName": "DTTERC20",
+    "contractName": "GLUSD",
+    "deployParam": [
+      "Pulse USD Token",
+      "PLTUSD"
+    ],
+    "type": "uups"
+  },
+  {
+    "factoryName": "TransactionIDFactory",
+    "contractName": "TransactionIDFactory",
+    "deployParam": [],
+    "type": "uups"
+  },
+  {
+    "factoryName": "Encash",
+    "contractName": "Encash",
+    "deployParam": [
+      "address.TransactionIDFactory"
+    ],
+    "type": "uups"
+  },
+  {
+    "factoryName": "UserPermission",
+    "contractName": "UserPermission",
+    "deployParam": [
+      "deployer",
+      "config.issuer",
+      [
+        "address.Encash",
+        "config.suspenseAccount",
+        "config.activeUsers"
+      ]
+    ],
+    "type": "normal"
+  },
+  {
+    "factoryName": "Config",
+    "contractName": "Config",
+    "deployParam": [
+      "address.UserPermission",
+      "address.Encash",
+      "address.TransactionIDFactory",
+      "deployer"
+    ],
+    "type": "normal"
+  }
+]

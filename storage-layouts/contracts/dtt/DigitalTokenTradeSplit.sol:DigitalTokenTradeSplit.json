@@ -1,0 +1,144 @@
+{
+  "storage": [
+    {
+      "astId": 530,
+      "contract": "contracts/dtt/DigitalTokenTradeSplit.sol:DigitalTokenTradeSplit",
+      "label": "_initialized",
+      "offset": 0,
+      "slot": "0",
+      "type": "t_uint8"
+    },
+    {
+      "astId": 533,
+      "contract": "contracts/dtt/DigitalTokenTradeSplit.sol:DigitalTokenTradeSplit",
+      "label": "_initializing",
+      "offset": 1,
+      "slot": "0",
+      "type": "t_bool"
+    },
+    {
+      "astId": 3267,
+      "contract": "contracts/dtt/DigitalTokenTradeSplit.sol:DigitalTokenTradeSplit",
+      "label": "__gap",
+      "offset": 0,
+      "slot": "1",
+      "type": "t_array(t_uint256)50_storage"
+    },
+    {
+      "astId": 11,
+      "contract": "contracts/dtt/DigitalTokenTradeSplit.sol:DigitalTokenTradeSplit",
+      "label": "_owner",
+      "offset": 0,
+      "slot": "51",
+      "type": "t_address"
+    },
+    {
+      "astId": 131,
+      "contract": "contracts/dtt/DigitalTokenTradeSplit.sol:DigitalTokenTradeSplit",
+      "label": "__gap",
+      "offset": 0,
+      "slot": "52",
+      "type": "t_array(t_uint256)49_storage"
+    },
+    {
+      "astId": 512,
+      "contract": "contracts/dtt/DigitalTokenTradeSplit.sol:DigitalTokenTradeSplit",
+      "label": "__gap",
+      "offset": 0,
+      "slot": "101",
+      "type": "t_array(t_uint256)50_storage"
+    },
+    {
+      "astId": 828,
+      "contract": "contracts/dtt/DigitalTokenTradeSplit.sol:DigitalTokenTradeSplit",
+      "label": "__gap",
+      "offset": 0,
+      "slot": "151",
+      "type": "t_array(t_uint256)50_storage"
+    },
+    {
+      "astId": 12759,
+      "contract": "contracts/dtt/DigitalTokenTradeSplit.sol:DigitalTokenTradeSplit",
+      "label": "conditionContractAddress",
+      "offset": 0,
+      "slot": "201",
+      "type": "t_address"
+    },
+    {
+      "astId": 12761,
+      "contract": "contracts/dtt/DigitalTokenTradeSplit.sol:DigitalTokenTradeSplit",
+      "label": "idFactoryAddress",
+      "offset": 0,
+      "slot": "202",
+      "type": "t_address"
+    },
+    {
+      "astId": 12763,
+      "contract": "contracts/dtt/DigitalTokenTradeSplit.sol:DigitalTokenTradeSplit",
+      "label": "conditionCopyAddress",
+      "offset": 0,
+      "slot": "203",
+      "type": "t_address"
+    },
+    {
+      "astId": 12766,
+      "contract": "contracts/dtt/DigitalTokenTradeSplit.sol:DigitalTokenTradeSplit",
+      "label": "dtt",
+      "offset": 0,
+      "slot": "204",
+      "type": "t_contract(DigitalTokenTrade)12739"
+    },
+    {
+      "astId": 12769,
+      "contract": "contracts/dtt/DigitalTokenTradeSplit.sol:DigitalTokenTradeSplit",
+      "label": "config",
+      "offset": 0,
+      "slot": "205",
+      "type": "t_contract(Config)14452"
+    }
+  ],
+  "types": {
+    "t_address": {
+      "encoding": "inplace",
+      "label": "address",
+      "numberOfBytes": "20"
+    },
+    "t_array(t_uint256)49_storage": {
+      "base": "t_uint256",
+      "encoding": "inplace",
+      "label": "uint256[49]",
+      "numberOfBytes": "1568"
+    },
+    "t_array(t_uint256)50_storage": {
+      "base": "t_uint256",
+      "encoding": "inplace",
+      "label": "uint256[50]",
+      "numberOfBytes": "1600"
+    },
+    "t_bool": {
+      "encoding": "inplace",
+      "label": "bool",
+      "numberOfBytes": "1"
+    },
+    "t_contract(Config)14452": {
+      "encoding": "inplace",
+      "label": "contract Config",
+      "numberOfBytes": "20"
+    },
+    "t_contract(DigitalTokenTrade)12739": {
+      "encoding": "inplace",
+      "label": "contract DigitalTokenTrade",
+      "numberOfBytes": "20"
+    },
+    "t_uint256": {
+      "encoding": "inplace",
+      "label": "uint256",
+      "numberOfBytes": "32"
+    },
+    "t_uint8": {
+      "encoding": "inplace",
+      "label": "uint8",
+      "numberOfBytes": "1"
+    }
+  }
+}

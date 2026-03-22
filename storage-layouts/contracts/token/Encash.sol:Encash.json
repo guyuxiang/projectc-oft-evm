@@ -1,0 +1,119 @@
+{
+  "storage": [
+    {
+      "astId": 32756,
+      "contract": "contracts/token/Encash.sol:Encash",
+      "label": "IDFactory",
+      "offset": 0,
+      "slot": "0",
+      "type": "t_contract(TransactionIDFactory)34541"
+    },
+    {
+      "astId": 32779,
+      "contract": "contracts/token/Encash.sol:Encash",
+      "label": "encashInfos",
+      "offset": 0,
+      "slot": "1",
+      "type": "t_mapping(t_string_memory_ptr,t_struct(EncashInfo)32774_storage)"
+    },
+    {
+      "astId": 32782,
+      "contract": "contracts/token/Encash.sol:Encash",
+      "label": "config",
+      "offset": 0,
+      "slot": "2",
+      "type": "t_contract(Config)27393"
+    },
+    {
+      "astId": 32784,
+      "contract": "contracts/token/Encash.sol:Encash",
+      "label": "paused",
+      "offset": 20,
+      "slot": "2",
+      "type": "t_bool"
+    }
+  ],
+  "types": {
+    "t_address": {
+      "encoding": "inplace",
+      "label": "address",
+      "numberOfBytes": "20"
+    },
+    "t_bool": {
+      "encoding": "inplace",
+      "label": "bool",
+      "numberOfBytes": "1"
+    },
+    "t_contract(Config)27393": {
+      "encoding": "inplace",
+      "label": "contract Config",
+      "numberOfBytes": "20"
+    },
+    "t_contract(TransactionIDFactory)34541": {
+      "encoding": "inplace",
+      "label": "contract TransactionIDFactory",
+      "numberOfBytes": "20"
+    },
+    "t_mapping(t_string_memory_ptr,t_struct(EncashInfo)32774_storage)": {
+      "encoding": "mapping",
+      "key": "t_string_memory_ptr",
+      "label": "mapping(string => struct Encash.EncashInfo)",
+      "numberOfBytes": "32",
+      "value": "t_struct(EncashInfo)32774_storage"
+    },
+    "t_string_memory_ptr": {
+      "encoding": "bytes",
+      "label": "string",
+      "numberOfBytes": "32"
+    },
+    "t_string_storage": {
+      "encoding": "bytes",
+      "label": "string",
+      "numberOfBytes": "32"
+    },
+    "t_struct(EncashInfo)32774_storage": {
+      "encoding": "inplace",
+      "label": "struct Encash.EncashInfo",
+      "members": [
+        {
+          "astId": 32767,
+          "contract": "contracts/token/Encash.sol:Encash",
+          "label": "tokenAddress",
+          "offset": 0,
+          "slot": "0",
+          "type": "t_address"
+        },
+        {
+          "astId": 32769,
+          "contract": "contracts/token/Encash.sol:Encash",
+          "label": "encasher",
+          "offset": 0,
+          "slot": "1",
+          "type": "t_address"
+        },
+        {
+          "astId": 32771,
+          "contract": "contracts/token/Encash.sol:Encash",
+          "label": "value",
+          "offset": 0,
+          "slot": "2",
+          "type": "t_uint256"
+        },
+        {
+          "astId": 32773,
+          "contract": "contracts/token/Encash.sol:Encash",
+          "label": "state",
+          "offset": 0,
+          "slot": "3",
+          "type": "t_string_storage"
+        }
+      ],
+      "numberOfBytes": "128"
+    },
+    "t_uint256": {
+      "encoding": "inplace",
+      "label": "uint256",
+      "numberOfBytes": "32"
+    }
+  }
+}

@@ -1,0 +1,122 @@
+{
+  "storage": [
+    {
+      "astId": 33397,
+      "contract": "contracts/token/RORERC721.sol:RORERC721",
+      "label": "lastTokenId",
+      "offset": 0,
+      "slot": "0",
+      "type": "t_uint256"
+    },
+    {
+      "astId": 33399,
+      "contract": "contracts/token/RORERC721.sol:RORERC721",
+      "label": "nameHash",
+      "offset": 0,
+      "slot": "1",
+      "type": "t_bytes32"
+    },
+    {
+      "astId": 33401,
+      "contract": "contracts/token/RORERC721.sol:RORERC721",
+      "label": "versionHash",
+      "offset": 0,
+      "slot": "2",
+      "type": "t_bytes32"
+    },
+    {
+      "astId": 33406,
+      "contract": "contracts/token/RORERC721.sol:RORERC721",
+      "label": "_nonces",
+      "offset": 0,
+      "slot": "3",
+      "type": "t_mapping(t_uint256,t_struct(Counter)34036_storage)"
+    },
+    {
+      "astId": 33468,
+      "contract": "contracts/token/RORERC721.sol:RORERC721",
+      "label": "config",
+      "offset": 0,
+      "slot": "4",
+      "type": "t_contract(Config)27393"
+    },
+    {
+      "astId": 33471,
+      "contract": "contracts/token/RORERC721.sol:RORERC721",
+      "label": "userPermission",
+      "offset": 0,
+      "slot": "5",
+      "type": "t_contract(UserPermission)27783"
+    },
+    {
+      "astId": 33531,
+      "contract": "contracts/token/RORERC721.sol:RORERC721",
+      "label": "nftIssuer",
+      "offset": 0,
+      "slot": "6",
+      "type": "t_address"
+    },
+    {
+      "astId": 33548,
+      "contract": "contracts/token/RORERC721.sol:RORERC721",
+      "label": "paused",
+      "offset": 20,
+      "slot": "6",
+      "type": "t_bool"
+    }
+  ],
+  "types": {
+    "t_address": {
+      "encoding": "inplace",
+      "label": "address",
+      "numberOfBytes": "20"
+    },
+    "t_bool": {
+      "encoding": "inplace",
+      "label": "bool",
+      "numberOfBytes": "1"
+    },
+    "t_bytes32": {
+      "encoding": "inplace",
+      "label": "bytes32",
+      "numberOfBytes": "32"
+    },
+    "t_contract(Config)27393": {
+      "encoding": "inplace",
+      "label": "contract Config",
+      "numberOfBytes": "20"
+    },
+    "t_contract(UserPermission)27783": {
+      "encoding": "inplace",
+      "label": "contract UserPermission",
+      "numberOfBytes": "20"
+    },
+    "t_mapping(t_uint256,t_struct(Counter)34036_storage)": {
+      "encoding": "mapping",
+      "key": "t_uint256",
+      "label": "mapping(uint256 => struct Counters.Counter)",
+      "numberOfBytes": "32",
+      "value": "t_struct(Counter)34036_storage"
+    },
+    "t_struct(Counter)34036_storage": {
+      "encoding": "inplace",
+      "label": "struct Counters.Counter",
+      "members": [
+        {
+          "astId": 34035,
+          "contract": "contracts/token/RORERC721.sol:RORERC721",
+          "label": "_value",
+          "offset": 0,
+          "slot": "0",
+          "type": "t_uint256"
+        }
+      ],
+      "numberOfBytes": "32"
+    },
+    "t_uint256": {
+      "encoding": "inplace",
+      "label": "uint256",
+      "numberOfBytes": "32"
+    }
+  }
+}

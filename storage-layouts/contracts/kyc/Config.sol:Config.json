@@ -1,0 +1,111 @@
+{
+  "storage": [
+    {
+      "astId": 2305,
+      "contract": "contracts/kyc/Config.sol:Config",
+      "label": "_owner",
+      "offset": 0,
+      "slot": "0",
+      "type": "t_address"
+    },
+    {
+      "astId": 9612,
+      "contract": "contracts/kyc/Config.sol:Config",
+      "label": "userPermission",
+      "offset": 0,
+      "slot": "1",
+      "type": "t_address"
+    },
+    {
+      "astId": 9614,
+      "contract": "contracts/kyc/Config.sol:Config",
+      "label": "dtt",
+      "offset": 0,
+      "slot": "2",
+      "type": "t_address"
+    },
+    {
+      "astId": 9616,
+      "contract": "contracts/kyc/Config.sol:Config",
+      "label": "encash",
+      "offset": 0,
+      "slot": "3",
+      "type": "t_address"
+    },
+    {
+      "astId": 9618,
+      "contract": "contracts/kyc/Config.sol:Config",
+      "label": "rorEnhancement",
+      "offset": 0,
+      "slot": "4",
+      "type": "t_address"
+    },
+    {
+      "astId": 9620,
+      "contract": "contracts/kyc/Config.sol:Config",
+      "label": "rorMarket",
+      "offset": 0,
+      "slot": "5",
+      "type": "t_address"
+    },
+    {
+      "astId": 9622,
+      "contract": "contracts/kyc/Config.sol:Config",
+      "label": "rorAddress",
+      "offset": 0,
+      "slot": "6",
+      "type": "t_address"
+    },
+    {
+      "astId": 9624,
+      "contract": "contracts/kyc/Config.sol:Config",
+      "label": "idFactoryAddress",
+      "offset": 0,
+      "slot": "7",
+      "type": "t_address"
+    },
+    {
+      "astId": 9626,
+      "contract": "contracts/kyc/Config.sol:Config",
+      "label": "governorAddress",
+      "offset": 0,
+      "slot": "8",
+      "type": "t_address"
+    },
+    {
+      "astId": 9628,
+      "contract": "contracts/kyc/Config.sol:Config",
+      "label": "simulateTransaction",
+      "offset": 20,
+      "slot": "8",
+      "type": "t_bool"
+    },
+    {
+      "astId": 9632,
+      "contract": "contracts/kyc/Config.sol:Config",
+      "label": "tokenSuspense",
+      "offset": 0,
+      "slot": "9",
+      "type": "t_mapping(t_address,t_address)"
+    }
+  ],
+  "types": {
+    "t_address": {
+      "encoding": "inplace",
+      "label": "address",
+      "numberOfBytes": "20"
+    },
+    "t_bool": {
+      "encoding": "inplace",
+      "label": "bool",
+      "numberOfBytes": "1"
+    },
+    "t_mapping(t_address,t_address)": {
+      "encoding": "mapping",
+      "key": "t_address",
+      "label": "mapping(address => address)",
+      "numberOfBytes": "32",
+      "value": "t_address"
+    }
+  }
+}

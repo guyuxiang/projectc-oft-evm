@@ -1,0 +1,8 @@
+{
+  "issuer": "0x741a62a826416b7ec5956cc006bf2d17631e6e98",
+  "suspenseAccount": "0x741a62a826416b7ec5956cc006bf2d17631e6e98",
+  "topUpAccount": "0xd9e1c0d0bf274dea3a554a2fbaa682697716e791",
+  "tokenMintLicensor": "0xd9e1c0d0bf274dea3a554a2fbaa682697716e791",
+  "activeUsers": [],
+  "network": "polygon"
+}

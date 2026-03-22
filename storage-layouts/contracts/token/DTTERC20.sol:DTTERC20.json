@@ -1,0 +1,131 @@
+{
+  "storage": [
+    {
+      "astId": 14284,
+      "contract": "contracts/token/DTTERC20.sol:DTTERC20",
+      "label": "mintRecords",
+      "offset": 0,
+      "slot": "0",
+      "type": "t_mapping(t_string_memory_ptr,t_struct(MintRecord)14210_storage)"
+    },
+    {
+      "astId": 14289,
+      "contract": "contracts/token/DTTERC20.sol:DTTERC20",
+      "label": "burnRecords",
+      "offset": 0,
+      "slot": "1",
+      "type": "t_mapping(t_string_memory_ptr,t_struct(BurnRecord)14215_storage)"
+    },
+    {
+      "astId": 14291,
+      "contract": "contracts/token/DTTERC20.sol:DTTERC20",
+      "label": "tokenIssuer",
+      "offset": 0,
+      "slot": "2",
+      "type": "t_address"
+    },
+    {
+      "astId": 14326,
+      "contract": "contracts/token/DTTERC20.sol:DTTERC20",
+      "label": "config",
+      "offset": 0,
+      "slot": "3",
+      "type": "t_contract(Config)9762"
+    },
+    {
+      "astId": 14378,
+      "contract": "contracts/token/DTTERC20.sol:DTTERC20",
+      "label": "paused",
+      "offset": 20,
+      "slot": "3",
+      "type": "t_bool"
+    }
+  ],
+  "types": {
+    "t_address": {
+      "encoding": "inplace",
+      "label": "address",
+      "numberOfBytes": "20"
+    },
+    "t_bool": {
+      "encoding": "inplace",
+      "label": "bool",
+      "numberOfBytes": "1"
+    },
+    "t_contract(Config)9762": {
+      "encoding": "inplace",
+      "label": "contract Config",
+      "numberOfBytes": "20"
+    },
+    "t_mapping(t_string_memory_ptr,t_struct(BurnRecord)14215_storage)": {
+      "encoding": "mapping",
+      "key": "t_string_memory_ptr",
+      "label": "mapping(string => struct DTTERC20.BurnRecord)",
+      "numberOfBytes": "32",
+      "value": "t_struct(BurnRecord)14215_storage"
+    },
+    "t_mapping(t_string_memory_ptr,t_struct(MintRecord)14210_storage)": {
+      "encoding": "mapping",
+      "key": "t_string_memory_ptr",
+      "label": "mapping(string => struct DTTERC20.MintRecord)",
+      "numberOfBytes": "32",
+      "value": "t_struct(MintRecord)14210_storage"
+    },
+    "t_string_memory_ptr": {
+      "encoding": "bytes",
+      "label": "string",
+      "numberOfBytes": "32"
+    },
+    "t_struct(BurnRecord)14215_storage": {
+      "encoding": "inplace",
+      "label": "struct DTTERC20.BurnRecord",
+      "members": [
+        {
+          "astId": 14212,
+          "contract": "contracts/token/DTTERC20.sol:DTTERC20",
+          "label": "owner",
+          "offset": 0,
+          "slot": "0",
+          "type": "t_address"
+        },
+        {
+          "astId": 14214,
+          "contract": "contracts/token/DTTERC20.sol:DTTERC20",
+          "label": "amount",
+          "offset": 0,
+          "slot": "1",
+          "type": "t_uint256"
+        }
+      ],
+      "numberOfBytes": "64"
+    },
+    "t_struct(MintRecord)14210_storage": {
+      "encoding": "inplace",
+      "label": "struct DTTERC20.MintRecord",
+      "members": [
+        {
+          "astId": 14207,
+          "contract": "contracts/token/DTTERC20.sol:DTTERC20",
+          "label": "recipient",
+          "offset": 0,
+          "slot": "0",
+          "type": "t_address"
+        },
+        {
+          "astId": 14209,
+          "contract": "contracts/token/DTTERC20.sol:DTTERC20",
+          "label": "amount",
+          "offset": 0,
+          "slot": "1",
+          "type": "t_uint256"
+        }
+      ],
+      "numberOfBytes": "64"
+    },
+    "t_uint256": {
+      "encoding": "inplace",
+      "label": "uint256",
+      "numberOfBytes": "32"
+    }
+  }
+}

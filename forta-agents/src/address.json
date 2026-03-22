@@ -1,0 +1,114 @@
+{
+	"GLSGD": {
+		"address": "0x0FC4AeeA49c5d5ce4F861421cAc03A743fDefeE7",
+		"sourceContractName": "DTTERC20",
+		"contractDeployTxBlockNumber": 17809531,
+		"contractType": "uups",
+		"contractCode": "Dtt_GLSGD_ERC20Permit"
+	},
+	"GLUSD": {
+		"address": "0xda09f60aff8c39ac09deed0af589c85d078c5054",
+		"sourceContractName": "DTTERC20",
+		"contractDeployTxBlockNumber": 17809538,
+		"contractType": "uups",
+		"contractCode": "Dtt_GLUSD_ERC20Permit"
+	},
+	"TransactionIDFactory": {
+		"address": "0x7981aaB650A1084cA5660e780B1620528CeD76Ac",
+		"sourceContractName": "TransactionIDFactory",
+		"contractDeployTxBlockNumber": 17809547,
+		"contractType": "uups",
+		"contractCode": "Dtt_TransactionIDFactory"
+	},
+	"DigitalTokenTradeDiamond": {
+		"address": "0xD09776e82124C767192405A0EE6C0Ac034fF4Cd4",
+		"sourceContractName": "DigitalTokenTradeDiamond",
+		"contractDeployTxBlockNumber": 17809552,
+		"contractType": "diamond",
+		"contractCode": "Dtt_DigitalTokenTradeDiamond",
+		"facetContracts": [
+			{
+				"facetName": "ConditionActionFacet",
+				"address": "0xFA62544a5C3F19C4b48ba2Cf61cD669B67E8C33B"
+			},
+			{
+				"facetName": "ConditionCalculateFacet",
+				"address": "0x12DF75775FaE2383ff2F959Edee49010c1921897"
+			},
+			{
+				"facetName": "ConditionCreateFacet",
+				"address": "0x4C357C3EA3cfD4aE71C09cb3fd82FD9E6941E2a1"
+			},
+			{
+				"facetName": "SendFacet",
+				"address": "0x521B30787100995B9c0B9eb243DAcfEaE15de6E6"
+			},
+			{
+				"facetName": "SettleFacet",
+				"address": "0x7CDEbeBEf41e4b81859E96b675DdD2b2b1AB37Ed"
+			},
+			{
+				"facetName": "TradeStatusFacet",
+				"address": "0x5D031fC67fd4E42Ab85F50241561633657e54B0b"
+			},
+			{
+				"facetName": "VerifyFacet",
+				"address": "0x967C217d774dfee18a939792f5913C5fE26B91e5"
+			},
+			{
+				"facetName": "DiamondEtherscanFacet",
+				"address": "0xFb77542fD354A9C718c37c4C98Ae6CD70571A306"
+			},
+			{
+				"facetName": "DiamondLoupeFacet",
+				"address": "0xF321904DbA2c9800895E02dCd80DeE7e02732336"
+			},
+			{
+				"facetName": "DiamondCutFacet",
+				"address": "0xdEcA4876099d83a19aA36b521b302c1f0F178082"
+			}
+		]
+	},
+	"Encash": {
+		"address": "0x56dD257CF8D7b91c3A61912150870984F8524502",
+		"sourceContractName": "Encash",
+		"contractDeployTxBlockNumber": 17809579,
+		"contractType": "uups",
+		"contractCode": "Dtt_Encash"
+	},
+	"RORERC721": {
+		"address": "0x337ACD64f3b0A50104B4A11f07303895f47BBF7A",
+		"sourceContractName": "RORERC721",
+		"contractDeployTxBlockNumber": 17809588,
+		"contractType": "uups",
+		"contractCode": "Dtt_Ror_ERC721Permit"
+	},
+	"RorEnhancement": {
+		"address": "0xB025240937FA6b22062E76A1276414047C85bBed",
+		"sourceContractName": "RorEnhancement",
+		"contractDeployTxBlockNumber": 17809594,
+		"contractType": "uups",
+		"contractCode": "Dtt_RorEnhancement"
+	},
+	"RorMarket": {
+		"address": "0x7390Dab44C2D07cE90aEb94208F44D5A45Ee49B8",
+		"sourceContractName": "RorMarket",
+		"contractDeployTxBlockNumber": 17809603,
+		"contractType": "uups",
+		"contractCode": "Dtt_RorMarket"
+	},
+	"UserPermission": {
+		"address": "0xC705ba25D1541F534aF9a9da9CbFA393D5057A18",
+		"sourceContractName": "UserPermission",
+		"contractDeployTxBlockNumber": 17809605,
+		"contractType": "normal",
+		"contractCode": "Dtt_UserPermission"
+	},
+	"Config": {
+		"address": "0x11B591Cdb67B3C71Cc106B1B65DEefca60a1e239",
+		"sourceContractName": "Config",
+		"contractDeployTxBlockNumber": 17809607,
+		"contractType": "normal",
+		"contractCode": "Dtt_Config"
+	}
+}
