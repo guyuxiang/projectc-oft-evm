@@ -3,8 +3,8 @@
 		"contractCode": "Dtt_Config",
 		"contractName": "",
 		"sourceContractName": "Config",
-		"address": "0x88aEE81a295757E39Ee4cdd386234c7D8a503354",
-		"contractDeployTxBlockNumber": 81545731,
+		"address": "0x0eF51A491D5C5EA170732ba28569FF801437145e",
+		"contractDeployTxBlockNumber": 10498726,
 		"contractType": "normal",
 		"facetContracts": null
 	},
@@ -12,8 +12,8 @@
 		"contractCode": "Dtt_Encash",
 		"contractName": "",
 		"sourceContractName": "Encash",
-		"address": "0x798dcb02eDa5915908BB86ECf959e2Db2204ffb0",
-		"contractDeployTxBlockNumber": 81545697,
+		"address": "0x41b50CA5AF8B1b2c01e940FaEe67386f07d60ef3",
+		"contractDeployTxBlockNumber": 10498724,
 		"contractType": "uups",
 		"facetContracts": null
 	},
@@ -21,8 +21,8 @@
 		"contractCode": "Dtt_GLSGD_ERC20Permit",
 		"contractName": "",
 		"sourceContractName": "DTTERC20",
-		"address": "0xeD7e053A8aC42dC84cfb65702dF81d148c4B091E",
-		"contractDeployTxBlockNumber": 81545619,
+		"address": "0xbEEc6343C6DD0060d675Fee55F06A91ce34659c9",
+		"contractDeployTxBlockNumber": 10498718,
 		"contractType": "uups",
 		"facetContracts": null
 	},
@@ -30,8 +30,8 @@
 		"contractCode": "Dtt_GLUSD_ERC20Permit",
 		"contractName": "",
 		"sourceContractName": "DTTERC20",
-		"address": "0x02d0A2eB2C2114286B8AD5eE4f3ABDbB0EF80D54",
-		"contractDeployTxBlockNumber": 81545630,
+		"address": "0xE7A26Ca5D09f3728B910cf576A78BBbb0509e393",
+		"contractDeployTxBlockNumber": 10498720,
 		"contractType": "uups",
 		"facetContracts": null
 	},
@@ -39,8 +39,8 @@
 		"contractCode": "Dtt_TransactionIDFactory",
 		"contractName": "",
 		"sourceContractName": "TransactionIDFactory",
-		"address": "0xE8bCB7661Dd67840bcEfd1F62a6eD1d48AF602f8",
-		"contractDeployTxBlockNumber": 81545639,
+		"address": "0xa99E8F4f286Eb6Af83E111A6643123Ee958714F7",
+		"contractDeployTxBlockNumber": 10498722,
 		"contractType": "uups",
 		"facetContracts": null
 	},
@@ -48,8 +48,8 @@
 		"contractCode": "Dtt_UserPermission",
 		"contractName": "",
 		"sourceContractName": "UserPermission",
-		"address": "0x03F1793734a585B5d5C35ccC9288B18CC2C23182",
-		"contractDeployTxBlockNumber": 81545728,
+		"address": "0x5d67e79Bc305E19d45123F0611d29203ED246d70",
+		"contractDeployTxBlockNumber": 10498725,
 		"contractType": "normal",
 		"facetContracts": null
 	}

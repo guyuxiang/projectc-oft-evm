@@ -24,11 +24,7 @@ contract Config is Ownable {
 
     constructor(
         address _userPermission,
-        address _dtt,
         address _encash,
-        address _rorEnhancement,
-        address _rorMarket,
-        address _rorAddress,
         address _idFactoryAddress,
         address _governor
     ) Ownable(msg.sender) {

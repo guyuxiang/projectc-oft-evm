@@ -9,9 +9,9 @@
 //
 pragma solidity 0.8.20;
 
+import "@layerzerolabs/oft-evm-upgradeable/contracts/oft/OFTUpgradeable.sol";
 import "@openzeppelin/contracts-upgradeable/token/ERC20/ERC20Upgradeable.sol";
 import "@openzeppelin/contracts-upgradeable/token/ERC20/extensions/ERC20PermitUpgradeable.sol";
-import "@openzeppelin/contracts-upgradeable/access/OwnableUpgradeable.sol";
 import "@openzeppelin/contracts-upgradeable/proxy/utils/UUPSUpgradeable.sol";
 import "@openzeppelin/contracts/utils/cryptography/SignatureChecker.sol";
 import "../kyc/UserPermission.sol";
@@ -19,7 +19,7 @@ import "../kyc/Permission.sol";
 import "../kyc/Config.sol";
 import "../libraries/Constants.sol";
 
-contract DTTERC20 is TokenPermission, ERC20PermitUpgradeable, OwnableUpgradeable, UUPSUpgradeable {
+contract DTTERC20 is TokenPermission, OFTUpgradeable, ERC20PermitUpgradeable, UUPSUpgradeable {
     struct MintRecord {
         address recipient;
         uint256 amount;
@@ -31,15 +31,17 @@ contract DTTERC20 is TokenPermission, ERC20PermitUpgradeable, OwnableUpgradeable
     }
 
     function initialize(string memory name, string memory symbol) public initializer {
-        __ERC20_init(name, symbol);
-        __ERC20Permit_init(name);
         __Ownable_init(msg.sender);
+        __OFT_init(name, symbol, _msgSender());
+        __ERC20Permit_init(name);
         __UUPSUpgradeable_init();
         tokenIssuer = _msgSender();
     }
 
-    /// @custom:oz-upgrades-unsafe-allow constructor
-    constructor() initializer {}
+    /// @custom:oz-upgrades-unsafe-allow constructor state-variable-immutable
+    constructor(address lzEndpoint) OFTUpgradeable(lzEndpoint) {
+        _disableInitializers();
+    }
 
     function _authorizeUpgrade(address) internal override onlyOwner {}
 
@@ -233,4 +235,24 @@ contract DTTERC20 is TokenPermission, ERC20PermitUpgradeable, OwnableUpgradeable
         whenNotPaused
         DebitDoor(UserPermission(config.userPermission()).getPermission(getIssuer(), verifyAddress))
     {}
+
+    function _debit(address from, uint256 amountLD, uint256 minAmountLD, uint32 dstEid)
+        internal
+        override
+        whenNotPaused
+        DebitDoor(UserPermission(config.userPermission()).getPermission(getIssuer(), from))
+        returns (uint256 amountSentLD, uint256 amountReceivedLD)
+    {
+        return super._debit(from, amountLD, minAmountLD, dstEid);
+    }
+
+    function _credit(address to, uint256 amountLD, uint32 srcEid)
+        internal
+        override
+        whenNotPaused
+        CreditDoorMint(UserPermission(config.userPermission()).getPermission(getIssuer(), to))
+        returns (uint256 amountReceivedLD)
+    {
+        return super._credit(to, amountLD, srcEid);
+    }
 }

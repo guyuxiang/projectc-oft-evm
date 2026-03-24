@@ -113,6 +113,7 @@ async function parseEvent (receipt, iface, eventName) {
 
 async function deployFixture () {
   const [owner, alice, bob, carol, issuer, suspense] = await ethers.getSigners()
+  const lzEndpointV2Mock = owner.address
 
   const TransactionIDFactory = await ethers.getContractFactory('TransactionIDFactory')
   const idFactory = await upgrades.deployProxy(TransactionIDFactory, [], {
@@ -130,6 +131,13 @@ async function deployFixture () {
   const erc20 = await upgrades.deployProxy(DTTERC20, ['LDA', 'LDA'], {
     initializer: 'initialize',
     kind: 'uups',
+    constructorArgs: [lzEndpointV2Mock],
+    unsafeAllow: [
+      'constructor',
+      'state-variable-immutable',
+      'missing-initializer-call',
+      'incorrect-initializer-order',
+    ],
   })
 
   const RORERC721 = await ethers.getContractFactory('RORERC721')

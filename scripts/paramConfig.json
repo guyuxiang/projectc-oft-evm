@@ -1,8 +1,9 @@
 {
-  "issuer": "0xc4e69dbdbd4b1283b7053cc00c39ab754546c0e7",
-  "suspenseAccount": "0xc4e69dbdbd4b1283b7053cc00c39ab754546c0e7",
-  "topUpAccount": "0xf629e6e113A27addA77c831450369f067dd652f7",
-  "tokenMintLicensor": "0xf629e6e113A27addA77c831450369f067dd652f7",
+  "issuer": "0x6d00479f9bd0A2Ae1801b9AD208204578B4978cD",
+  "suspenseAccount": "0x6d00479f9bd0A2Ae1801b9AD208204578B4978cD",
+  "topUpAccount": "0x6d00479f9bd0A2Ae1801b9AD208204578B4978cD",
+  "tokenMintLicensor": "0x6d00479f9bd0A2Ae1801b9AD208204578B4978cD",
+  "lzEndpoint": "0x6EDCE65403992e310A62460808c4b910D972f10f",
   "activeUsers": [],
-  "network": "lineaSepolia"
+  "network": "sepolia"
 }

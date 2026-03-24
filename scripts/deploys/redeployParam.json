@@ -6,6 +6,9 @@
       "Pulse SGD Token",
       "PLTSGD"
     ],
+    "constructorArgs": [
+      "config.lzEndpoint"
+    ],
     "type": "uups"
   },
   {
@@ -14,6 +17,9 @@
     "deployParam": [
       "Pulse USD Token",
       "PLTUSD"
+    ],
+    "constructorArgs": [
+      "config.lzEndpoint"
     ],
     "type": "uups"
   },

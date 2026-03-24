@@ -1,0 +1,28 @@
+{
+  "network": "sepolia",
+  "chainId": 40161,
+  "endpointV2": "0x6EDCE65403992e310A62460808c4b910D972f10f",
+  "proxy": "0x7E7C0ACB516Fe0F62b6d8E8051795A0D88ab97C0",
+  "implementation": "0x7C2a71930416FA05E63D0794591cFB821305eE4F",
+  "owner": "0x6d00479f9bd0A2Ae1801b9AD208204578B4978cD",
+  "name": "GLUSD",
+  "symbol": "GLUSD",
+  "deployer": "0x6d00479f9bd0A2Ae1801b9AD208204578B4978cD",
+  "config": "0x0eF51A491D5C5EA170732ba28569FF801437145e",
+  "delegate": null,
+  "tokenIssuer": "0x6d00479f9bd0A2Ae1801b9AD208204578B4978cD",
+  "tokenMintLicensor": "0x6d00479f9bd0A2Ae1801b9AD208204578B4978cD",
+  "mintLimit": "5000000000000000000000000",
+  "actions": {
+    "setConfig": "0xc431e33a7e5c10197df72adc0b07dfd265b018361912c4b1d1adf6c7223b14e0",
+    "setDelegate": null,
+    "setIssuer": null,
+    "setMintLicensor": "0x338e2bae98e0379c38a0d3edcbc70c370ecacb66ce6f52fd2aeb25a7ef94ca0d",
+    "setMintLimit": "0x955535dce1c74fe676434332c8f2b20dba57c9462d22c19a4123509ca3ae5581"
+  },
+  "remote": {
+    "eid": 40168,
+    "peer": "8erkQYqfm8SpWN3NVUT55NRtuEBUdmVxfdBy8mBNyvVR",
+    "enforcedOptions": "0x00030100210100000000000000000000000000030d40000000000000000000000000001f1df0"
+  }
+}

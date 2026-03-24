@@ -2,6 +2,13 @@
   "devDependencies": {
     "@ethersproject/abi": "^5.4.7",
     "@ethersproject/providers": "^5.4.7",
+    "@layerzerolabs/lz-evm-messagelib-v2": "^3.0.167",
+    "@layerzerolabs/lz-evm-protocol-v2": "^3.0.167",
+    "@layerzerolabs/lz-v2-utilities": "^3.0.167",
+    "@layerzerolabs/oapp-evm": "^0.4.1",
+    "@layerzerolabs/oapp-evm-upgradeable": "^0.1.3",
+    "@layerzerolabs/oft-evm": "^4.0.1",
+    "@layerzerolabs/oft-evm-upgradeable": "^3.2.1",
     "@nomicfoundation/hardhat-chai-matchers": "^2.0.0",
     "@nomicfoundation/hardhat-ethers": "^3.0.0",
     "@nomicfoundation/hardhat-network-helpers": "^1.0.9",
@@ -9,7 +16,7 @@
     "@nomicfoundation/hardhat-verify": "^2.1.1",
     "@openzeppelin/contracts": "^5.0.1",
     "@openzeppelin/contracts-upgradeable": "^5.0.1",
-    "@openzeppelin/hardhat-upgrades": "^3.0.1",
+    "@openzeppelin/hardhat-upgrades": "^3.9.1",
     "@tenderly/hardhat-tenderly": "^2.2.2",
     "@typechain/ethers-v6": "^0.5.0",
     "@typechain/hardhat": "^9.0.0",
@@ -29,6 +36,7 @@
     "typescript": "^5.4.5"
   },
   "dependencies": {
+    "bs58": "^6.0.0",
     "bignumber.js": "^9.1.1",
     "dayjs": "^1.11.10",
     "ethers5": "npm:ethers@^5.7.2",
@@ -44,7 +52,14 @@
     "test": "test"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "hardhat test",
+    "compile": "hardhat compile",
+    "lz:deploy:sepolia": "hardhat run scripts/layerzero/deploySepolia.js --network sepolia",
+    "lz:wire:solana": "hardhat run scripts/layerzero/wireSepoliaToSolana.js --network sepolia",
+    "lz:send:solana": "hardhat run scripts/layerzero/sendSepoliaToSolana.js --network sepolia",
+    "lz:status": "node scripts/layerzero/statusMessage.js",
+    "lz:retry:sepolia": "hardhat run scripts/layerzero/retrySepoliaReceive.js --network sepolia",
+    "lz:refund:sepolia": "hardhat run scripts/layerzero/refundSepolia.js --network sepolia",
     "postinstall": "patch-package"
   },
   "author": "",

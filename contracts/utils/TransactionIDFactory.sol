@@ -17,7 +17,9 @@ contract TransactionIDFactory is Initializable, UUPSUpgradeable, OwnableUpgradea
     }
 
     /// @custom:oz-upgrades-unsafe-allow constructor
-    constructor() initializer {}
+    constructor() {
+        _disableInitializers();
+    }
 
     function _authorizeUpgrade(address) internal override onlyOwner {}
 
@@ -36,7 +38,7 @@ contract TransactionIDFactory is Initializable, UUPSUpgradeable, OwnableUpgradea
 
     modifier TransactionIdCallerCheck() {
         require(
-            msg.sender == config.dtt() || msg.sender == config.encash() || msg.sender == config.rorMarket(),
+            msg.sender == config.encash(),
             ErrorCode.SCM_TransactionIDFactory_generateTransactionID_CALLER_ERROR
         );
         _;

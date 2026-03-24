@@ -7,6 +7,11 @@ require("hardhat-storage-layout-changes");
 require("@nomicfoundation/hardhat-verify");
 require("hardhat-gas-reporter");
 
+function normalizePrivateKey(value) {
+  if (!value) return value;
+  return value.startsWith("0x") ? value : `0x${value}`;
+}
+
 // tdly.setup();
 task(
   "hello",
@@ -35,14 +40,15 @@ module.exports = {
       url: "https://linea-sepolia.gateway.tenderly.co/1GjaTkoayBTlQHJ9OGWU8N",
       chainId: 59141,
       accounts: [
-        "30e0e9db4f5333aa98ecdaa43644a1566f441c9d754636dc1049c3511c59a929",
+        normalizePrivateKey("30e0e9db4f5333aa98ecdaa43644a1566f441c9d754636dc1049c3511c59a929"),
       ],
     },
-    unichain_sepolia: {
-      url: "https://cold-methodical-surf.unichain-sepolia.quiknode.pro/42ae3ab40beb6d16e4c2810d922476fcf38144fd/",
-      chainId: 1301,
+    sepolia: {
+      url: "https://sepolia.gateway.tenderly.co/65VPkX3BEXAlx0MQDjKgF7",
+      chainId: 11155111,
+      eid: 40161,
       accounts: [
-        "298149d01f7a23cb938ab6874ea345516479fb70bd5e14c99c0ffaf84798ca80",
+        normalizePrivateKey("8e948e8f61e7468921b55e2581b6964174bb54f73492768f08d9c3e84f84518d"),
       ],
     },
   },

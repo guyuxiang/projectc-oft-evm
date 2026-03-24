@@ -1,8 +1,16 @@
 const { ethers, upgrades } = require("hardhat");
 const db = require("./db");
 const hre = require("hardhat");
-const { getSelectors, FacetCutAction } = require("./diamond.js");
 const generateDummyContractFromABI = require("../others/runGenerateDummyFromABI");
+
+function getSelectors(contract) {
+  const selectors = [];
+  for (const fragment of contract.interface.fragments) {
+    if (fragment.type !== "function") continue;
+    selectors.push(contract.interface.getFunction(fragment.format()).selector);
+  }
+  return selectors;
+}
 
 module.exports.reOrganizeTokens = function reOrganizeTokens(
   tokenNames,
@@ -21,7 +29,8 @@ module.exports.deployContracts = async function deployContracts(
 ) {
   const address = await db.read();
   const envParam = await db.readConfig();
-  const depolyer = (await hre.ethers.provider.getSigner(0)).address;
+  const deployerSigner = await hre.ethers.provider.getSigner(0);
+  const depolyer = await deployerSigner.getAddress();
 
   function getParamValue(item) {
     let paramFactoryName = "";
@@ -58,6 +67,10 @@ module.exports.deployContracts = async function deployContracts(
     return paramArray;
   }
 
+  function processConstructorArgs(constructorArgs = []) {
+    return processDeployParam(constructorArgs);
+  }
+
   const FacetCutAction = { Add: 0, Replace: 1, Remove: 2 };
 
   for (let i = 0; i < contractsToDeploy.length; i++) {
@@ -77,7 +90,7 @@ module.exports.deployContracts = async function deployContracts(
       // deploy DigitalTokenTradeDiamond
       console.log(
         "DigitalTokenTradeDiamond deployer: ",
-        (await hre.ethers.provider.getSigner(0)).address,
+        await (await hre.ethers.provider.getSigner(0)).getAddress(),
       );
       let diamond = await factory.deploy(
         (await hre.ethers.provider.getSigner(0)).address,
@@ -152,12 +165,20 @@ module.exports.deployContracts = async function deployContracts(
       });
     } else if (contract.type === "uups") {
       const param = processDeployParam(contract.deployParam);
+      const constructorArgs = processConstructorArgs(contract.constructorArgs);
       // console.log(contract.type +' param: ', param)
       const options = {
         initializer: "initialize",
         kind: "uups",
         redeployImplementation: "always",
         timeout: 0,
+        constructorArgs,
+        unsafeAllow: [
+          "constructor",
+          "state-variable-immutable",
+          "missing-initializer-call",
+          "incorrect-initializer-order",
+        ],
       };
       contractInstance =
         contract.deployParam.length === 0

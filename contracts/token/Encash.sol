@@ -20,7 +20,9 @@ contract Encash is EncashPermission, Initializable, UUPSUpgradeable, OwnableUpgr
     }
 
     /// @custom:oz-upgrades-unsafe-allow constructor
-    constructor() initializer {}
+    constructor() {
+        _disableInitializers();
+    }
 
     function _authorizeUpgrade(address) internal override onlyOwner {}
 
